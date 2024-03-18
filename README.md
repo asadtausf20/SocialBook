@@ -1,7 +1,7 @@
 # SocialBook (Facebook Clone)
 By GreatStack
 
-Responsive: <b color="red">NO<br>
+Responsive: <b>NO<br>
 
 Video Followed: by GreatStack <a>https://youtu.be/NljIHlZRTTE</a>
 
