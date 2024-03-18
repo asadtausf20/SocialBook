@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="main">
+
+        <nav>
+            <div class="nav-left">
+                <img src="Images/Logo/logo.png" class="logo">
+                <ul>
+                    <li><img src="Images/Icons/notification.png"></li>
+                    <li><img src="Images/Icons/inbox.png"></li>
+                    <li><img src="Images/Icons/video.png"></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+
+                <div class="search-box">
+                    <img src="Images/Icons/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <div class="profile-image online" onclick="settingsMenuToggle()">
+                    <img src="Images/profile-pic.png">
+                </div>
+
+            </div>
+
+            <!------------ Setting Menu ------------>
+            <div class="settings-menu">
+
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+
+                <div class="settings-menu-inner">
+
+                    <div class="user-profile">
+                        <img src="Images/profile-pic.png">
+                        <div>
+                            <p>Jhon Nicholson</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="user-profile">
+                        <img src="Images/Icons/feedback.png">
+                        <div>
+                            <p>Jhon Nicholson</p>
+                            <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="settings-links">
+                        <img src="Images/Icons/setting.png" class="settings-icon">
+                        <a href="#">Settings & Privacy <img src="Images/Icons/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="Images/Icons/help.png" class="settings-icon">
+                        <a href="#">Help & Support <img src="Images/Icons/arrow.png" width="10px"></a> 
+                    </div>
+                    <div class="settings-links">
+                        <img src="Images/Icons/display.png" class="settings-icon">
+                        <a href="#">Display & Accessibility <img src="Images/Icons/arrow.png" width="10px"></a> 
+                    </div>
+                    <div class="settings-links">
+                        <img src="Images/Icons/logout.png" class="settings-icon">
+                        <a href="#">Logout <img src="Images/Icons/arrow.png" width="10px"></a> 
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="container">
+
+            <!------------ Left Sidebar ------------>
+            <div class="left-sidebar">
+
+                <div class="imp-links">
+                    <a href="#"><img src="Images/Icons/news.png">Latest News</a>
+                    <a href="#"><img src="Images/Icons/friends.png">Friends</a>
+                    <a href="#"><img src="Images/Icons/group.png">Group</a>
+                    <a href="#"><img src="Images/Icons/marketplace.png">Marketplace</a>
+                    <a href="#"><img src="Images/Icons/watch.png">Watch</a>
+                    <a href="#">See More</a>
+                </div>
+
+                <div class="shortcut-links">
+                    <p>Your Shortcuts</p>
+                    <a href="#"><img src="Images/shortcut-1.png">Web Development</a>
+                    <a href="#"><img src="Images/shortcut-2.png">Web Design course</a>
+                    <a href="#"><img src="Images/shortcut-3.png">Full Stack Development</a>
+                    <a href="#"><img src="Images/shortcut-4.png">Website Expert</a>
+                </div>
+
+            </div>
+
+            <!------------ Main Content ------------>
+            <div class="main-content">
+
+                <div class="story-gallery">
+                    <div class="story story-1">
+                        <img src="Images/Icons/upload.png">
+                        <p>Post Story</p>
+                    </div>
+
+                    <div class="story story-2">
+                        <img src="Images/member-1.png">
+                        <p>Alison</p>
+                    </div>
+
+                    <div class="story story-3">
+                        <img src="Images/member-2.png">
+                        <p>Jackson</p>
+                    </div>
+
+                    <div class="story story-4">
+                        <img src="Images/member-3.png">
+                        <p>Samona</p>
+                    </div>
+
+                    <div class="story story-5">
+                        <img src="Images/member-4.png">
+                        <p>Jhon Doe</p>
+                    </div>
+                </div>
+
+                <div class="write-post-container">
+
+                    <div class="user-profile">
+                        <img src="Images/profile-pic.png">
+                        <div>
+                            <p>Jhon Nicholson</p>
+                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+                    </div>
+
+                    <div class="post-input-container">
+                        <textarea placeholder="What's on your mind, Jhon?" rows="3"></textarea>
+
+                        <div class="add-post-icons">
+                            <a href="#"><img src="Images/Icons/live-video.png">Live Video</a>
+                            <a href="#"><img src="Images/Icons/photo.png">Photo/Video</a>
+                            <a href="#"><img src="Images/Icons/feeling.png">Feeling/Activity</a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="post-container">
+
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="Images/profile-pic.png">
+                            <div>
+                                <p>Jhon Nicholson</p>
+                                <span>March 15 2024, 06:59</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+
+                    <p class="post-text">Subscribe <span>@Easy Tutorials</span> Youtube Channels to Watch More Videos on
+                        Website Development and UI Designs <a href="#">#EasyTutorial</a> <a href="#">#YoutubeChannel</a>
+                    </p>
+
+                    <div class="post-img">
+                        <img src="Images/feed-image-1.png">
+                    </div>
+
+                    <div class="post-row">
+
+                        <div class="activity-icons">
+                            <div><img src="Images/Icons/like-blue.png">120</div>
+                            <div><img src="Images/Icons/comments.png">45</div>
+                            <div><img src="Images/Icons/share.png">20</div>
+                        </div>
+
+                        <div class="post-profile-icon">
+                            <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post-container">
+
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="Images/profile-pic.png">
+                            <div>
+                                <p>Jhon Nicholson</p>
+                                <span>March 14 2024, 12:01</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+
+                    <p class="post-text">Like and share this video with friends, tag <span>@Easy Tutorials</span>
+                        facebook page on your post. Ask doubts in the comments. <a href="#">#EasyTutorial</a> <a
+                            href="#">#YoutubeChannel</a></p>
+
+                    <div class="post-img">
+                        <img src="Images/feed-image-2.png">
+                    </div>
+
+                    <div class="post-row">
+
+                        <div class="activity-icons">
+                            <div><img src="Images/Icons/like.png">150</div>
+                            <div><img src="Images/Icons/comments.png">55</div>
+                            <div><img src="Images/Icons/share.png">40</div>
+                        </div>
+
+                        <div class="post-profile-icon">
+                            <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post-container">
+
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="Images/profile-pic.png">
+                            <div>
+                                <p>Jhon Nicholson</p>
+                                <span>March 13 2024, 13:19</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+
+                    <p class="post-text">Like and share this video with friends, tag <span>@Easy Tutorials</span>
+                        facebook page on your post. Ask doubts in the comments. <a href="#">#EasyTutorial</a> <a
+                            href="#">#YoutubeChannel</a></p>
+
+                    <div class="post-img">
+                        <img src="Images/feed-image-3.png">
+                    </div>
+
+                    <div class="post-row">
+
+                        <div class="activity-icons">
+                            <div><img src="Images/Icons/like.png">202</div>
+                            <div><img src="Images/Icons/comments.png">56</div>
+                            <div><img src="Images/Icons/share.png">29</div>
+                        </div>
+
+                        <div class="post-profile-icon">
+                            <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post-container">
+
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="Images/profile-pic.png">
+                            <div>
+                                <p>Jhon Nicholson</p>
+                                <span>March 12 2024, 07:21</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+
+                    <p class="post-text">Like and share this video with friends, tag <span>@Easy Tutorials</span>
+                        facebook page on your post. Ask doubts in the comments. <a href="#">#EasyTutorial</a> <a
+                            href="#">#YoutubeChannel</a></p>
+
+                    <div class="post-img">
+                        <img src="Images/feed-image-4.png">
+                    </div>
+
+                    <div class="post-row">
+
+                        <div class="activity-icons">
+                            <div><img src="Images/Icons/like.png">254</div>
+                            <div><img src="Images/Icons/comments.png">75</div>
+                            <div><img src="Images/Icons/share.png">54</div>
+                        </div>
+
+                        <div class="post-profile-icon">
+                            <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="post-container">
+
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="Images/profile-pic.png">
+                            <div>
+                                <p>Jhon Nicholson</p>
+                                <span>March 10 2024, 22:50</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+
+                    <p class="post-text">Like and share this video with friends, tag <span>@Easy Tutorials</span>
+                        facebook page on your post. Ask doubts in the comments. <a href="#">#EasyTutorial</a> <a
+                            href="#">#YoutubeChannel</a></p>
+
+                    <div class="post-img">
+                        <img src="Images/feed-image-5.png">
+                    </div>
+
+                    <div class="post-row">
+
+                        <div class="activity-icons">
+                            <div><img src="Images/Icons/like.png">560</div>
+                            <div><img src="Images/Icons/comments.png">82</div>
+                            <div><img src="Images/Icons/share.png">48</div>
+                        </div>
+
+                        <div class="post-profile-icon">
+                            <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button type="button" class="load-more-btn">Load More</button>
+
+            </div>
+
+
+            <!------------ Right Sidebar ------------>
+            <div class="right-sidebar">
+
+                <div class="sidebar-title">
+                    <h4>Events</h4>
+                    <a href="#">See All</a>
+                </div>
+
+                <div class="event">
+
+                    <div class="event-left">
+                        <h3>18</h3>
+                        <span>March</span>
+                    </div>
+
+                    <div class="event-right">
+                        <h4>Social Media</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+
+                <div class="event">
+
+                    <div class="event-left">
+                        <h3>22</h3>
+                        <span>June</span>
+                    </div>
+
+                    <div class="event-right">
+                        <h4>Mobile Marketing</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-title">
+                    <h4>Advertisement</h4>
+                    <a href="#">Close</a>
+                </div>
+                <img src="Images/advertisement.png" class="sidebar-ads">
+
+                <div class="sidebar-title">
+                    <h4>Conversation</h4>
+                    <a href="#">Hide Chat</a>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="Images/member-1.png">
+                    </div>
+                    <p>Alison Mina</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="Images/member-2.png">
+                    </div>
+                    <p>Jackson Aston</p>
+                </div>
+                <div class="online-list">
+                    <div class="online">
+                        <img src="Images/member-3.png">
+                    </div>
+                    <p>Samona Rose</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>@Copyright 2024 - EasyTutorial X AsadTausif</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
